@@ -1,0 +1,98 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+.picture{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.header{
+   
+    height: 700px;
+}
+
+.bio{
+    color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.4em;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+.languagesKnown{
+    color: white;
+    font-size: 1.4em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.languagesKnown ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.languagesKnown ul li{
+    margin: 20px;
+}
+
+.goals{
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.goals ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.goals ul li{
+    margin: 10px;
+}
+
+.projectContainer{
+    border-top: 1px solid gray;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    color: white;
+    font-size: 1.4em;
+}
+
+.projects img{
+    height: 250px;
+    width: 350px;
+}
+
+.gitHubPic{
+    height: 80px;
+    margin-top: 50px;
+}
+
+
+.contactPage{
+    border-top: 1px solid gray;
+    color: white;
+    font-size: 1.4em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin: 20px auto 0px auto;
+    color: white;
+    font-size: 15px;
+}
+
+
