@@ -5,7 +5,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   return (
-    <div className='contactPage'>
+    <div className='contactPage' id='contact'>
         <h2>Contact:</h2>
         <div className='contact'>
         <a href="mailto:gmfreundlich@gmail.com"><FontAwesomeIcon icon={faEnvelope} size='4x' color='white'></FontAwesomeIcon></a>

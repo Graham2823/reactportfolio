@@ -8,9 +8,9 @@ const Bio = () => {
         <div class="goals">
         <h3>Goals:</h3>
         <ul>
-            <li>make a positive impact on a company</li>
+            <li>Make a positive impact</li>
             <li>Learn more programming languages</li>
-            <li>Create effieicient, and secure web applications</li>
+            <li>Create efficient, and secure web applications</li>
             <li>Create web applications that serve a positive and impactful purpose</li>
             <li>Combine my passion for sports and my passion for coding to create web applications focused around sports</li>
         </ul>
