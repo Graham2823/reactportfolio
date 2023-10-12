@@ -8,7 +8,7 @@
 }
 
 .header{
-   
+   margin: 20px;
     height: 700px;
 }
 
@@ -28,16 +28,6 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.languagesKnown ul{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.languagesKnown ul li{
-    margin: 20px;
 }
 
 .goals{
@@ -66,7 +56,14 @@
     font-size: 1.4em;
 }
 
+.projects{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .projects img{
+    margin: 40px;
     height: 250px;
     width: 350px;
 }
@@ -94,5 +91,61 @@
     color: white;
     font-size: 15px;
 }
+
+.App-link {
+  color: #61dafb;
+}
+
+.custom-navbar {
+  background-color: #282c34; 
+  opacity: .8;
+  color: white;
+  height: 50px;
+  border-bottom: 1px solid white;
+  text-align: left;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.custom-navbar .nav-link {
+padding: 10px;
+justify-content: space-evenly;
+  color: white; 
+  text-decoration: none;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #61dafb; /* Link text color on hover */
+}
+
+/* LanguagesKnown.css */
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed for spacing */
+  }
+  
+  .horizontal-list .list-group-item {
+    width: calc(33.33% - 10px); /* Adjust as needed for spacing and number of items */
+    margin-bottom: 10px; /* Adjust as needed for spacing */
+  }
+
+  .header .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header a{
+text-decoration: none;
+color: white;
+margin: 10px;
+display: flex;
+align-items: center;
+  }
+
+  
 
 
