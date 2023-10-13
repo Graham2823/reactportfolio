@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import './page.css'
-import Header from './components/Header';
-import Bio from './components/Bio';
-import LanguagesKnown from './components/LanguagesKnown';
-import Projects from './components/Projects';
-import Contact from './components/ContactMe';
-import TopNav from './components/TopNav';
+import Header from './Sections/Header';
+import Bio from './Sections/Bio';
+import LanguagesKnown from './Sections/LanguagesKnown';
+import Projects from './Sections/Projects';
+import Contact from './Sections/ContactMe';
+import TopNav from './Sections/TopNav';
 
 
 function App() {
