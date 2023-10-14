@@ -191,5 +191,18 @@ color: #9acd32;
 color: #9acd32;
 }
   
+.projectCard{
+  border: 1px solid #9acd32;;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  max-width: 450px; /* Adjust the width as needed */
+  height: 550px;
+}
 
-
+.languages{
+  border: 1px solid #9acd32;
+  margin: 5px;
+  padding: 2px;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Container } from 'react-bootstrap';
+import ProjectCard from '../components/projectCard';
 
 const Projects = () => {
 
@@ -7,12 +8,8 @@ const Projects = () => {
     <Container className='projectContainer'>
       <h2>Projects:</h2>
       <div className='projects'>
-        <a href="https://graham2823.github.io/basketballGame/?fbclid=IwAR1WNPgFrsd_o2boUvyhd1LBjGqm-YaNaeZLNFQbY9C0HKW1FoL7E5P2EuQ">
-          <img src="bballGame.jpeg" alt="Basketball Game" />
-        </a>
-        <a href="https://capstone-terror-time-machine-client.vercel.app/">
-          <img src="TTM.jpeg" alt="Terror Time Machine" />
-        </a>
+        <ProjectCard name={"Basketball Game"} link={"https://graham2823.github.io/basketballGame/?fbclid=IwAR1WNPgFrsd_o2boUvyhd1LBjGqm-YaNaeZLNFQbY9C0HKW1FoL7E5P2EuQ"} image={"bballGame.jpeg"} languages={["Javasript", "HTML", "CSS"]} description="Play against the computer in a basketball game, where the first to 11 is the winner!"/>
+        <ProjectCard name={"Terror Time Machine"} link={"https://capstone-terror-time-machine-client.vercel.app/"} image={"TTM.jpeg"} languages={["React", "Node.js", "Express","Javasript", "CSS"]} description={"Discuss some of the most famous horror movies of all time!"}/>
       </div>
     </Container>
   );
