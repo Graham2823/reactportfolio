@@ -1,5 +1,8 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
+h2{
+  color: #9acd32;
+}
 
 .picture{
     height: 300px;
@@ -7,20 +10,33 @@
 }
 
 .header{
-   margin: 20px;
     height: 100vh;
-    padding-top: 150px;
+    z-index: 999;
   }
+  
   
   .bio{
     color: white;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 30px;
+    padding-top: 20px;
     font-size: 1.4em;
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
+    border-bottom: 1px solid #9acd32;
+    border-top: 1px solid #9acd32;
+    height: 400px;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.bio-list-item{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .languagesKnown{
@@ -29,6 +45,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    height: 200px;
 }
 
 .goals{
@@ -50,7 +67,7 @@
 }
 
 .projectContainer{
-    border-top: 1px solid gray;
+    border-top: 1px solid #9acd32;
     width: 90%;
     margin: 0 auto 20px auto;
     color: white;
@@ -76,13 +93,18 @@
 
 
 .contactPage{
-    border-top: 1px solid gray;
+    border-top: 1px solid #9acd32;
     color: white;
     font-size: 1.4em;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
+
+.contact h2{
+  color: white;
+}
+
 
 .contact{
     display: flex;
@@ -102,12 +124,13 @@
   opacity: .8;
   color: white;
   height: 50px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #9acd32;
   text-align: left;
   width: 100%;
   position: fixed;
   display: flex;
   align-items: center;
+  z-index: 1000;
 }
 
 .custom-navbar .nav-link {
@@ -118,7 +141,7 @@ justify-content: space-evenly;
 }
 
 .custom-navbar .nav-link:hover {
-  color: #61dafb; /* Link text color on hover */
+  color: #9acd32; /* Link text color on hover */
 }
 
 /* LanguagesKnown.css */
@@ -141,9 +164,32 @@ justify-content: space-evenly;
 
   .header a{
 text-decoration: none;
-color: white;
+color: #9acd32;
   }
 
+  .mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer .headerInfo{
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainContainer .headerInfo a{
+  text-decoration: none;
+color: #9acd32;
+}
   
 
 

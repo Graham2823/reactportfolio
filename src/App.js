@@ -7,6 +7,7 @@ import LanguagesKnown from './Sections/LanguagesKnown';
 import Projects from './Sections/Projects';
 import Contact from './Sections/ContactMe';
 import TopNav from './Sections/TopNav';
+import CanvasArt from './Sections/Canvas';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
     <div className="App">
       <TopNav/>
       <header className="App-header">
-        <Header />
+        <CanvasArt className="canvasArt"/>
+        {/* <Header /> */}
       </header>
       <section id="bio">
         <Bio />
