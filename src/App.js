@@ -18,7 +18,6 @@ function App() {
       <TopNav/>
       <header className="App-header">
         <CanvasArt className="canvasArt"/>
-        {/* <Header /> */}
       </header>
       <section id="bio">
         <Bio />
