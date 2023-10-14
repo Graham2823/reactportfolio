@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ListGroup } from 'react-bootstrap';
 import { gsap } from 'gsap';
-import { CSSPlugin } from 'gsap/CSSPlugin'; // Required for gsap.to to work
+import { CSSPlugin } from 'gsap/CSSPlugin';
 import { useInView } from 'react-intersection-observer';
 
 gsap.registerPlugin(CSSPlugin);
 
 const LanguagesKnown = () => {
-  const [ref, inView] = useInView(); // Remove triggerOnce
+  const [ref, inView] = useInView({ triggerOnce: false });
+  const [animated, setAnimated] = useState(false);
 
-  const animateItem = (item) => {
-    gsap.from(item, {
-      scaleX: 0,
+  const animateItems = (items) => {
+    gsap.from(items, {
+      opacity: 0,
+      y: 100,
       duration: 1,
       ease: 'power4.inOut',
+      stagger: 0.2,
       onComplete: () => {
-        gsap.set(item, { scaleX: 1 });
+        setAnimated(true);
       },
     });
   };
@@ -24,39 +27,87 @@ const LanguagesKnown = () => {
     <div className="languagesKnown" ref={ref}>
       <h2>Languages/Software:</h2>
       <ListGroup className="horizontal-list">
-        <ListGroup.Item
-          className="list-group-item"
-          style={{ opacity: inView ? 1 : 0 }}
-          ref={animateItem}
-        >
-          HTML/CSS
-        </ListGroup.Item>
-        <ListGroup.Item
-          className="list-group-item"
-          style={{ opacity: inView ? 1 : 0 }}
-          ref={animateItem}
-        >
-          JavaScript
-        </ListGroup.Item>
-        <ListGroup.Item
-          className="list-group-item"
-          style={{ opacity: inView ? 1 : 0 }}
-          ref={animateItem}
-        >
-          React
-        </ListGroup.Item>
-        <ListGroup.Item className="list-group-item" style={{ opacity: inView ? 1 : 0 }}
-          ref={animateItem}>Node.js</ListGroup.Item>
-        <ListGroup.Item className="list-group-item" style={{ opacity: inView ? 1 : 0 }}
-          ref={animateItem}>MongoDB</ListGroup.Item>
-        <ListGroup.Item className="list-group-item" style={{ opacity: inView ? 1 : 0 }}
-          ref={animateItem}>Express</ListGroup.Item>
-        <ListGroup.Item className="list-group-item" style={{ opacity: inView ? 1 : 0 }}
-          ref={animateItem}>Next.js</ListGroup.Item>
-        <ListGroup.Item className="list-group-item" style={{ opacity: inView ? 1 : 0 }}
-          ref={animateItem}>EJS</ListGroup.Item>
-        <ListGroup.Item className="list-group-item" style={{ opacity: inView ? 1 : 0 }}
-          ref={animateItem}>Puppeteer Data Scraping</ListGroup.Item>
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            HTML/CSS
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            JavaScript
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            React
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            Node.js
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            MongoDB
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            Express
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            Next.js
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            EJS
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            Puppeteer Data Scraping
+          </ListGroup.Item>
+        )}
       </ListGroup>
     </div>
   );

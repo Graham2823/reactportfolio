@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Container, ListGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
@@ -13,13 +13,13 @@ import { useInView } from 'react-intersection-observer';
 gsap.registerPlugin(CSSPlugin);
 
 const Bio = () => {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({ triggerOnce: false, rootMargin: '-50px 0px' });
   const [animated, setAnimated] = useState(false);
+  const itemsRef = useRef(null); // Create a ref for items
 
   useEffect(() => {
-    if (inView && !animated) {
-      const items = document.querySelectorAll('.bio-list-item');
-
+    if (inView && !animated && itemsRef.current) {
+      const items = itemsRef.current.querySelectorAll('.bio-list-item');
       gsap.from(items, {
         scaleX: 2,
         scaleY: 2,
@@ -27,19 +27,19 @@ const Bio = () => {
         y: -100,
         duration: 1,
         ease: 'elastic.out(1, 0.3)',
-        stagger: 1, // Set stagger to 1 second for a 1-second delay between items
+        stagger: 0.8,
         onComplete: () => {
           setAnimated(true);
         },
       });
-    } 
+    }
   }, [inView, animated]);
 
   return (
     <Container className='bio' ref={ref}>
       <h2>About</h2>
       <div className='about'>
-        <ListGroup className='vertical-list'>
+        <ListGroup className='vertical-list' ref={itemsRef}>
           <ListGroup.Item className='bio-list-item'>
             <FontAwesomeIcon icon={faHouse} />: Boston, Mass
           </ListGroup.Item>
