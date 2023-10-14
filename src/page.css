@@ -198,11 +198,21 @@ color: #9acd32;
   margin: 10px;
   text-align: center;
   max-width: 450px; /* Adjust the width as needed */
-  height: 550px;
+  height: 515px;
+}
+
+.projectCard img{
+  margin: 0px;
 }
 
 .languages{
   border: 1px solid #9acd32;
   margin: 5px;
   padding: 2px;
+}
+
+.languageContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

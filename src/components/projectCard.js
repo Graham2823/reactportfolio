@@ -8,9 +8,11 @@ const ProjectCard = ({name, link, image, languages, description}) => {
 			<a href={link}>
 				<img src={image} alt={name} />
 			</a>
+            <div className='languageContainer'>
             {languages && languages.map((language)=>(
                 <span className='languages'>{language}</span>
             ))}
+            </div>
             <p>{description}</p>
 		</Card>
 	);
