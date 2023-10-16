@@ -12,7 +12,7 @@ const Header = () => {
         <h1>Graham Freundlich</h1>
         <img src="GrahamPic.jpeg" class="picture"></img>
         <br/>
-        <a href='#bio'><FontAwesomeIcon icon={faArrowCircleDown}></FontAwesomeIcon></a>
+        <a href='#bio'><FontAwesomeIcon icon={faArrowCircleDown} size='3x'></FontAwesomeIcon></a>
    
     </Container>
    

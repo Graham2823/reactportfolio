@@ -229,3 +229,81 @@ color: #9acd32;
 .icons-nav {
   margin-left: auto;
 }
+
+
+/* Media Query for Phones */
+@media screen and (max-width: 768px) {
+  .custom-navbar{
+    position: fixed;
+  }
+  .custom-navbar .nav-link {
+    font-size: 14px; /* Adjust the font size to make the text smaller */
+  }
+  .header {
+    height: auto; /* Adjust height as needed */
+  }
+  .bio {
+    height: auto; /* Adjust height as needed */
+  }
+  .languagesKnown {
+    height: auto; /* Adjust height as needed */
+  }
+  .goals ul {
+    flex-direction: column; /* Stack list items vertically */
+  }
+  .projects img {
+    width: 50%; /* Make images fill the container width */
+    height: auto;
+    margin: 10px 0; /* Adjust margin as needed */
+  }
+  .contactPage {
+    width: 100%; /* Make the contact page full width */
+  }
+  .custom-navbar {
+    height: 60px; /* Adjust height as needed */
+  }
+  .custom-navbar .nav-link {
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  .hint {
+    display: none; /* Hide the hint element on small screens */
+  }
+  /* Add more responsive adjustments as needed */
+  .projectCard {
+    max-width: 100%; /* Adjust the width to fit the screen */
+    height: auto; /* Let the height adjust based on content */
+  }
+
+  .projectCard img {
+    max-width: 100%; /* Make images fit within the project card */
+    height: auto;
+    margin: 10px 0; /* Adjust margin as needed */
+  }
+
+  .languages {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  .mainContainer {
+    width: 100%; /* Adjust the width to fit the screen */
+  }
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling on phones */
+  }
+  .contact{
+    width: 90%;
+  }
+  .contact h2 {
+    font-size: 1.2em; /* Adjust the font size as needed for smaller screens */
+    margin: 10px 0; /* Add margin to the top and bottom for spacing */
+  }
+  .hint{
+    display: block;
+    width: 5vw;
+    height: 5vh;
+    z-index: 999;
+    font-size: .8em;
+    position: absolute;
+    top:70px;
+  }
+ 
+}
