@@ -190,6 +190,15 @@ color: #9acd32;
   text-decoration: none;
 color: #9acd32;
 }
+
+.hint{
+  width: 10vw;
+  height: 5vh;
+  position: absolute;
+  left: 10px;
+  top:150px;
+  z-index: 999;
+}
   
 .projectCard{
   border: 1px solid #9acd32;;

@@ -44,10 +44,13 @@ const Bio = () => {
             <FontAwesomeIcon icon={faHouse} />: Boston, Mass
           </ListGroup.Item>
           <ListGroup.Item className='bio-list-item'>
-            <FontAwesomeIcon icon={faUserGraduate} />: Kenzie Academy Full Stack Bootcamp
+            <FontAwesomeIcon icon={faUserGraduate} />: Lasell University '21
           </ListGroup.Item>
           <ListGroup.Item className='bio-list-item'>
-            <FontAwesomeIcon icon={faBasketball} />: Enjoy playing basketball in my free time
+            <FontAwesomeIcon icon={faUserGraduate} />: Kenzie Academy Full Stack Bootcamp '23
+          </ListGroup.Item>
+          <ListGroup.Item className='bio-list-item'>
+            <FontAwesomeIcon icon={faBasketball} />: Basketball Enthusiast
           </ListGroup.Item>
           <ListGroup.Item className='bio-list-item'>
             <FontAwesomeIcon icon={faPlaystation} />: Video Gamer
