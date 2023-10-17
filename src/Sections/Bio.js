@@ -14,11 +14,11 @@ gsap.registerPlugin(CSSPlugin);
 
 const Bio = () => {
   const [ref, inView] = useInView({ triggerOnce: false, rootMargin: '-50px 0px' });
-  const [animated, setAnimated] = useState(false);
-  const itemsRef = useRef(null); // Create a ref for items
+  const [animationStarted, setAnimationStarted] = useState(false);
+  const itemsRef = useRef(null);
 
   useEffect(() => {
-    if (inView && !animated && itemsRef.current) {
+    if (inView && !animationStarted && itemsRef.current) {
       const items = itemsRef.current.querySelectorAll('.bio-list-item');
       gsap.from(items, {
         scaleX: 2,
@@ -28,12 +28,12 @@ const Bio = () => {
         duration: 1,
         ease: 'elastic.out(1, 0.3)',
         stagger: 0.8,
-        onComplete: () => {
-          setAnimated(true);
-        },
+        
       });
+
+      setAnimationStarted(true); // Mark animation as started
     }
-  }, [inView, animated]);
+  }, [inView, animationStarted]);
 
   return (
     <Container className='bio' ref={ref}>

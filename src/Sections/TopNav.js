@@ -17,13 +17,13 @@ const TopNav = () => {
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#contact">Contact Me</Nav.Link>
             <Nav.Link href="https://github.com/Graham2823">
-              Github<FontAwesomeIcon icon={faGithub} size='3x' color='white' />
+              Github<FontAwesomeIcon icon={faGithub} size='2x' color='white' />
             </Nav.Link>
             <Nav.Link href="https://drive.google.com/file/d/1cFC8VlG6fFFfFNC5Oth7ioIDf4XnMxZC/view?usp=sharing">
-              Resume<FontAwesomeIcon icon={faFile} size='3x' />
+              Resume<FontAwesomeIcon icon={faFile} size='2x' />
             </Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/graham-freundlich/">
-              LinkedIn<FontAwesomeIcon icon={faLinkedin} size='3x' />
+              LinkedIn<FontAwesomeIcon icon={faLinkedin} size='2x' />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

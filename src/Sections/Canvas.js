@@ -36,7 +36,7 @@ const CanvasArt = () => {
                 <a href='#bio'><FontAwesomeIcon icon={faArrowCircleDown}></FontAwesomeIcon></a>
             </div>
             {showHint && (
-                <div className='hint'>Try Dragging The Screen!</div>
+                <div className='hint'>Try dragging the screen around!</div>
             )}
             <Canvas onPointerDown={()=>setShowHint(false)} onPointerUp={()=>setShowHint(true)}>
                 <ambientLight intensity={1.2} />
