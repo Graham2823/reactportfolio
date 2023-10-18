@@ -302,3 +302,10 @@ font-size: 1.7em;
   }
  
 }
+
+@media screen and (max-width: 1010px){
+  .projectCard {
+    max-width: 100%; /* Adjust the width to fit the screen */
+    height: 600px; /* Let the height adjust based on content */
+  }
+}
