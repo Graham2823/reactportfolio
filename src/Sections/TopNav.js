@@ -19,7 +19,7 @@ const TopNav = () => {
             <Nav.Link href="https://github.com/Graham2823">
               Github<FontAwesomeIcon icon={faGithub} size='2x' color='white' />
             </Nav.Link>
-            <Nav.Link href="https://drive.google.com/file/d/1o8ZWOS_SSanuoQTViYzZnhlFYdRrwOAG/view?usp=sharing">
+            <Nav.Link href="https://drive.google.com/file/d/1abm3hL1DZ1SJ__f0-r34fyJo2nzWcewa/view?usp=sharing">
               Resume<FontAwesomeIcon icon={faFile} size='2x' />
             </Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/graham-freundlich/">
