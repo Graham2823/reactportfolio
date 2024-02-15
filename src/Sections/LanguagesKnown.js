@@ -96,7 +96,7 @@ const LanguagesKnown = () => {
             ref={animateItems}
             style={{ opacity: animated ? 1 : 0 }}
           >
-            EJS
+            Firebase
           </ListGroup.Item>
         )}
         {inView && (
