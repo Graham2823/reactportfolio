@@ -5,7 +5,7 @@ const ProjectCard = ({name, link, image, languages, description}) => {
 	return (
 		<Card className='projectCard'>
 			<h1>{name}</h1>
-			<a href={link}>
+			<a href={link} target='_blank' rel='noopener noreferrer'>
 				<img src={image} alt={name} />
 			</a>
             <div className='languageContainer'>
