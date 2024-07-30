@@ -243,6 +243,10 @@ font-size: 1.7em;
   margin-left: auto;
 }
 
+.languagesKnown{
+  height: 250px;
+}
+
 
 /* Media Query for Phones */
 @media screen and (max-width: 768px) {
@@ -314,7 +318,7 @@ font-size: 1.7em;
     width: 5vw;
     height: 5vh;
     z-index: 999;
-    font-size: .8em;
+    font-size: .7em;
     position: absolute;
     top:70px;
   }

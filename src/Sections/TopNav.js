@@ -19,7 +19,7 @@ const TopNav = () => {
             <Nav.Link href="https://github.com/Graham2823" target='_blank' rel='noopener noreferrer'>
               Github<FontAwesomeIcon icon={faGithub} size='2x' color='white' />
             </Nav.Link>
-            <Nav.Link href="https://drive.google.com/file/d/1JLlUKV8055UiNFZ_pSe-wRTKESPHl4k3/view?usp=sharing" target='_blank' rel='noopener noreferrer'>
+            <Nav.Link href="https://docs.google.com/document/d/1BOOa_lWZVMgdK-tJxRC9QiGQSTn_-9GaEwl5mpY9Ij8/edit?usp=sharing" target='_blank' rel='noopener noreferrer'>
               Resume<FontAwesomeIcon icon={faFile} size='2x' />
             </Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/graham-freundlich/" target='_blank' rel='noopener noreferrer'>

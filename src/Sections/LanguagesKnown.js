@@ -108,6 +108,60 @@ const LanguagesKnown = () => {
             Puppeteer Data Scraping
           </ListGroup.Item>
         )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            Python
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            Flask
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            Typescript
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            MySQL
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            AWS
+          </ListGroup.Item>
+        )}
+        {inView && (
+          <ListGroup.Item
+            className="list-group-item"
+            ref={animateItems}
+            style={{ opacity: animated ? 1 : 0 }}
+          >
+            Wordpress
+          </ListGroup.Item>
+        )}
       </ListGroup>
     </div>
   );
