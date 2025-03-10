@@ -60,33 +60,6 @@ const LanguagesKnown = () => {
             ref={animateItems}
             style={{ opacity: animated ? 1 : 0 }}
           >
-            Django
-          </ListGroup.Item>
-        )}
-        {inView && (
-          <ListGroup.Item
-            className="list-group-item"
-            ref={animateItems}
-            style={{ opacity: animated ? 1 : 0 }}
-          >
-            Django REST Framework
-          </ListGroup.Item>
-        )}
-        {inView && (
-          <ListGroup.Item
-            className="list-group-item"
-            ref={animateItems}
-            style={{ opacity: animated ? 1 : 0 }}
-          >
-            Pytest
-          </ListGroup.Item>
-        )}
-        {inView && (
-          <ListGroup.Item
-            className="list-group-item"
-            ref={animateItems}
-            style={{ opacity: animated ? 1 : 0 }}
-          >
             Node.js
           </ListGroup.Item>
         )}

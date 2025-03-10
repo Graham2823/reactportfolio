@@ -78,7 +78,7 @@ const LanguagesKnown = () => {
             ref={animateItems}
             style={{ opacity: animated ? 1 : 0 }}
           >
-            Pytest
+            Django REST Framework
           </ListGroup.Item>
         )}
         {inView && (
